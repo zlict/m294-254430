@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
+            .large {
+                font-size: 2em;
+            }
+        </style>
+        <script>
+            // Variante 3
+            document.addEventListener("DOMContentLoaded", () => {
+                // Aufgabe 1
+                document.body.style = "background-color: red";
+
+                // Aufgabe 2
+                const h1El = document.querySelector("h1");
+                h1El.innerText = "Robin Bühler";
+                // h1El.textContent = "Robin Bühler2" Variante
+
+                // Aufgabe 3
+                const pEl = document.querySelector("p");
+                pEl.classList.add("large");
+
+                // Aufgabe 4
+                const ulEl = document.querySelector("ul");
+                const liEl = document.createElement("li");
+                liEl.innerText = "drei"; // liEl.innerText("drei"); -> geht nicht
+                ulEl.append(liEl);
+
+                // Aufgabe 5
+                // Aufgabe 6
+            });
+        </script>
+        <!--
+            // Variante 2
+            <script src="./script.js" defer></script>
+        -->
+    </head>
+
+    <body>
+        <h1>Platzhalter</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi animi corporis magni nesciunt natus. Fugiat
+            optio eaque eligendi modi, quisquam accusamus ea voluptatibus, aut doloremque asperiores, autem sequi sit
+            non?</p>
+        <ul>
+            <li>Eins</li>
+            <li>Zwei</li>
+        </ul>
+
+        <script>
+            // Variante 1
+            // document.body.style = "background-color: red";
+        </script>
+    </body>
+
+</html>
