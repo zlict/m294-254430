@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const el = document.querySelector("li:nth-child(3)");
+            el.remove();
+        })
+    </script>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        li {
+            background-color: crimson;
+        }
+
+        li:nth-child(3) {
+            background-color: green;
+            /* display: none; -> Versteckt und Platz wird freigegen */
+            /* visibility: hidden; -> Versteckt aber Platz reserviert */
+            /* opacity: 0; Durchsichtigkeit */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Eins</li>
+        <li>Zwei</li>
+        <li>Drei</li>
+        <li>Vier</li>
+        <li>Fünf</li>
+        <li>Sechs</li>
+        <li>Sieben</li>
+        <li>Acht</li>
+        <li>Neun</li>
+        <li>Zehn</li>
+    </ul>
+</body>
+</html>
